@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var name: String = ""
+    private var selectedKeyboard: UIKeyboardType = .default
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            Form {
+                TextField("Enter your name", text: $name)
+                    .foregroundColor(.black)
+                    .keyboardType(selectedKeyboard)
+                    .padding()
+                Text("Hey \(name)! " + String(cString: sayhello()))
+            }
         }
-        .padding()
     }
 }
 
@@ -24,3 +28,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

@@ -21,7 +21,7 @@
 		F9A9571028EC8970001C488F /* example-c.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "example-c.h"; sourceTree = "<group>"; };
 		F9A9571128EC8970001C488F /* example-c.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "example-c.c"; sourceTree = "<group>"; };
 		F9A9571328EC8989001C488F /* example-cpp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "example-cpp.cpp"; sourceTree = "<group>"; };
-		F9A9571428EC8989001C488F /* example-cpp.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "example-cpp.hpp"; sourceTree = "<group>"; };
+		F9A9571428EC8989001C488F /* example-cpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "example-cpp.h"; sourceTree = "<group>"; };
 		F9A9571628EC8BA0001C488F /* example-objc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "example-objc.m"; sourceTree = "<group>"; };
 		F9BF84FE28EC886600026AA4 /* Polyglot-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Polyglot-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9BF850128EC886600026AA4 /* Polyglot_SwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polyglot_SwiftApp.swift; sourceTree = "<group>"; };
@@ -63,8 +63,8 @@
 				F9BF850128EC886600026AA4 /* Polyglot_SwiftApp.swift */,
 				F9BF850328EC886600026AA4 /* ContentView.swift */,
 				F9A9571328EC8989001C488F /* example-cpp.cpp */,
+				F9A9571428EC8989001C488F /* example-cpp.h */,
 				F9A9571628EC8BA0001C488F /* example-objc.m */,
-				F9A9571428EC8989001C488F /* example-cpp.hpp */,
 				F9A9571028EC8970001C488F /* example-c.h */,
 				F9A9571128EC8970001C488F /* example-c.c */,
 				F9BF850528EC886700026AA4 /* Assets.xcassets */,
