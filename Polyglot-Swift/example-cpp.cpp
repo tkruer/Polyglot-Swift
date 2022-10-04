@@ -7,7 +7,7 @@
 
 #include "example-cpp.h"
 
-const char* sayhello()
+const char* sayhellocpp()
 {
     return "Welcome to Swift and C++!";
 }

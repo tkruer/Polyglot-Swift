@@ -6,3 +6,7 @@
 //
 
 #include "example-c.h"
+
+void sayhelloc() {
+    printf("Welcome to Swift and C!\n");
+}

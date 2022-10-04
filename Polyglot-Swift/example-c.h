@@ -10,4 +10,6 @@
 
 #include <stdio.h>
 
+void sayhelloc();
+
 #endif /* example_c_h */

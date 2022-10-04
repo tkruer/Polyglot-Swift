@@ -3,3 +3,4 @@
 //
 
 #include "example-cpp.h"
+#import "example-c.h"

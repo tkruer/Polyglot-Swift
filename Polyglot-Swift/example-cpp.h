@@ -10,7 +10,7 @@ extern "C"
 {
 #endif
 
-const char* sayhello();
+const char* sayhellocpp();
 
 #ifdef __cplusplus
 }

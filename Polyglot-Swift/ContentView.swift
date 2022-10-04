@@ -10,6 +10,9 @@ import SwiftUI
 struct ContentView: View {
     @State private var name: String = ""
     private var selectedKeyboard: UIKeyboardType = .default
+    @State private var showingAlert: Bool = false
+    private var alertTitle: String = "Check your terminal 😃"
+    private var alertButtonText: String = "Sweet!"
     var body: some View {
         NavigationView {
             Form {
@@ -17,7 +20,18 @@ struct ContentView: View {
                     .foregroundColor(.black)
                     .keyboardType(selectedKeyboard)
                     .padding()
-                Text("Hey \(name)! " + String(cString: sayhello()))
+                Text("Hey \(name)! " + String(cString: sayhellocpp()))
+                Button(action: {
+                    showingAlert = true
+                    sayhelloc()
+                }, label: {
+                    Text("Run Some C Code")
+                }).alert(Text(alertTitle),
+                         isPresented: $showingAlert,
+                         actions: {
+                             Button(alertButtonText) { }
+                    }
+                )
             }
         }
     }
@@ -28,4 +42,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
