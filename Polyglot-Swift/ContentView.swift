@@ -10,7 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @State private var name: String = ""
     private var selectedKeyboard: UIKeyboardType = .default
-    @State private var showingAlert: Bool = false
+    @State private var showingAlertC: Bool = false
+    @State private var showingAlertOBJC: Bool = false
     private var alertTitle: String = "Check your terminal 😃"
     private var alertButtonText: String = "Sweet!"
     var body: some View {
@@ -25,19 +26,30 @@ struct ContentView: View {
                 }
                 Section(header: Text("C Functions")) {
                     Button(action: {
-                        showingAlert = true
+                        showingAlertC = true
                         sayhelloc()
                     }, label: {
                         Text("Run Some C Code")
                     }).alert(Text(alertTitle),
-                             isPresented: $showingAlert,
+                             isPresented: $showingAlertC,
                              actions: {
                                  Button(alertButtonText) { }
                         }
                     )
                 }
                 Section(header: Text("Obj-C Functions")) {
-                    
+                    Button(action: {
+                        //MARK: Come back to this one, can't seem to get the function to link
+                        #warning("TODO: Link function")
+                        showingAlertOBJC = true
+                    }, label: {
+                        Text("Run Some Obj-C Code")
+                    }).alert(Text(alertTitle),
+                             isPresented: $showingAlertOBJC,
+                             actions: {
+                                 Button(alertButtonText) { }
+                        }
+                    )
                 }
             }
         }
