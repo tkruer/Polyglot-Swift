@@ -16,22 +16,29 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             Form {
-                TextField("Enter your name", text: $name)
-                    .foregroundColor(.black)
-                    .keyboardType(selectedKeyboard)
-                    .padding()
-                Text("Hey \(name)! " + String(cString: sayhellocpp()))
-                Button(action: {
-                    showingAlert = true
-                    sayhelloc()
-                }, label: {
-                    Text("Run Some C Code")
-                }).alert(Text(alertTitle),
-                         isPresented: $showingAlert,
-                         actions: {
-                             Button(alertButtonText) { }
-                    }
-                )
+                Section(header: Text("C++ Functions")) {
+                    TextField("Enter your name", text: $name)
+                        .foregroundColor(.black)
+                        .keyboardType(selectedKeyboard)
+                        .padding()
+                    Text("Hey \(name)! " + String(cString: sayhellocpp()))
+                }
+                Section(header: Text("C Functions")) {
+                    Button(action: {
+                        showingAlert = true
+                        sayhelloc()
+                    }, label: {
+                        Text("Run Some C Code")
+                    }).alert(Text(alertTitle),
+                             isPresented: $showingAlert,
+                             actions: {
+                                 Button(alertButtonText) { }
+                        }
+                    )
+                }
+                Section(header: Text("Obj-C Functions")) {
+                    
+                }
             }
         }
     }

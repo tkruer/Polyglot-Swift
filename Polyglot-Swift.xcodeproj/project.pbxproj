@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F9A9571228EC8970001C488F /* example-c.c in Sources */ = {isa = PBXBuildFile; fileRef = F9A9571128EC8970001C488F /* example-c.c */; };
 		F9A9571528EC8989001C488F /* example-cpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9A9571328EC8989001C488F /* example-cpp.cpp */; };
-		F9A9571728EC8BA0001C488F /* example-objc.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A9571628EC8BA0001C488F /* example-objc.m */; };
+		F9A9571D28EC9875001C488F /* NSObject+example_objc.h in Sources */ = {isa = PBXBuildFile; fileRef = F9A9571B28EC9769001C488F /* NSObject+example_objc.h */; };
 		F9BF850228EC886600026AA4 /* Polyglot_SwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BF850128EC886600026AA4 /* Polyglot_SwiftApp.swift */; };
 		F9BF850428EC886600026AA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BF850328EC886600026AA4 /* ContentView.swift */; };
 		F9BF850628EC886700026AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9BF850528EC886700026AA4 /* Assets.xcassets */; };
@@ -22,8 +22,9 @@
 		F9A9571128EC8970001C488F /* example-c.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "example-c.c"; sourceTree = "<group>"; };
 		F9A9571328EC8989001C488F /* example-cpp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "example-cpp.cpp"; sourceTree = "<group>"; };
 		F9A9571428EC8989001C488F /* example-cpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "example-cpp.h"; sourceTree = "<group>"; };
-		F9A9571628EC8BA0001C488F /* example-objc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "example-objc.m"; sourceTree = "<group>"; };
 		F9A9571828EC919E001C488F /* Polyglot-Swift-Bridging-Header-C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Polyglot-Swift-Bridging-Header-C.h"; sourceTree = "<group>"; };
+		F9A9571B28EC9769001C488F /* NSObject+example_objc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+example_objc.h"; sourceTree = "<group>"; };
+		F9A9571C28EC983D001C488F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F9BF84FE28EC886600026AA4 /* Polyglot-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Polyglot-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9BF850128EC886600026AA4 /* Polyglot_SwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polyglot_SwiftApp.swift; sourceTree = "<group>"; };
 		F9BF850328EC886600026AA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		F9BF850028EC886600026AA4 /* Polyglot-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				F9A9571C28EC983D001C488F /* Info.plist */,
 				F9BF850128EC886600026AA4 /* Polyglot_SwiftApp.swift */,
 				F9BF850328EC886600026AA4 /* ContentView.swift */,
 				F9A9571328EC8989001C488F /* example-cpp.cpp */,
@@ -69,7 +71,7 @@
 				F9A9571828EC919E001C488F /* Polyglot-Swift-Bridging-Header-C.h */,
 				F9A9571028EC8970001C488F /* example-c.h */,
 				F9A9571128EC8970001C488F /* example-c.c */,
-				F9A9571628EC8BA0001C488F /* example-objc.m */,
+				F9A9571B28EC9769001C488F /* NSObject+example_objc.h */,
 				F9BF850528EC886700026AA4 /* Assets.xcassets */,
 				F9BF850728EC886700026AA4 /* Preview Content */,
 			);
@@ -155,10 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A9571D28EC9875001C488F /* NSObject+example_objc.h in Sources */,
 				F9A9571528EC8989001C488F /* example-cpp.cpp in Sources */,
 				F9A9571228EC8970001C488F /* example-c.c in Sources */,
 				F9BF850428EC886600026AA4 /* ContentView.swift in Sources */,
-				F9A9571728EC8BA0001C488F /* example-objc.m in Sources */,
 				F9BF850228EC886600026AA4 /* Polyglot_SwiftApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +294,7 @@
 				DEVELOPMENT_TEAM = N4ALS8PN9L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Polyglot-Swift/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,6 +327,7 @@
 				DEVELOPMENT_TEAM = N4ALS8PN9L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Polyglot-Swift/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
